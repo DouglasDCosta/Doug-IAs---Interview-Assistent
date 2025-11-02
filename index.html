@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'%3e%3crect x='15' y='10' width='30' height='40' rx='15' fill='%234b5563' /%3e%3ccircle cx='30' cy='10' r='10' fill='%231f2937' /%3e%3cpath d='M 22 8 h 16' stroke='%234b5563' stroke-width='1.5' /%3e%3cpath d='M 24 12 h 12' stroke='%234b5563' stroke-width='1.5' /%3e%3ccircle cx='25' cy='28' r='2.5' fill='white' /%3e%3ccircle cx='35' cy='28' r='2.5' fill='white' /%3e%3cpath d='M 26 38 Q 30 43, 34 38' stroke='white' stroke-width='2' fill='none' stroke-linecap='round' /%3e%3crect x='25' y='50' width='10' height='5' fill='%231f2937' /%3e%3c/svg%3e" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI AI - Assistant for Interviewer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'brand-blue': '#1e40af',
+              'brand-light-blue': '#3b82f6',
+              'brand-dark': '#111827',
+              'brand-gray': '#1f2937',
+              'brand-light-gray': '#4b5563',
+              'brand-text': '#d1d5db',
+            },
+          },
+        },
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.28.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-brand-dark text-brand-text">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

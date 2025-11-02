@@ -1,0 +1,7 @@
+{
+  "name": "AI AI - Assistant for Interviewer",
+  "description": "An Automatic Intelligent Assistant for Interviewer (AI AI). It uses voice analysis to help manage interviews by tracking questions and checklist items in Brazilian Portuguese.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
