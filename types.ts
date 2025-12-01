@@ -6,6 +6,7 @@ export interface ChecklistItem {
   checkedByAI: boolean;
   checkedByHuman: boolean;
   keywords: string;
+  notes: string;
 }
 
 export interface ChecklistGroup {
@@ -34,7 +35,23 @@ export interface GenAIBlob {
 }
 
 export interface FirstCycleCode {
+  id: string;
   quote: string;
   code: string;
   type: 'Descritivo' | 'Processo' | 'In Vivo';
+}
+
+export interface SecondCycleCode {
+  theme: string;
+  codes: FirstCycleCode[];
+}
+
+export interface InterviewRecord {
+  id: string;
+  identifier: string;
+  startTime: string;
+  endTime: string;
+  transcription: string;
+  notes: string;
+  summary: string | null;
 }
