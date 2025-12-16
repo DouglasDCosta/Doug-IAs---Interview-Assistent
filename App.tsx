@@ -732,7 +732,7 @@ const App = () => {
 
   const beginRecording = useCallback(async () => {
     setStatus('processing');
-    const systemInstruction = `Você é um assistente de transcrição. Transcreva o áudio em português do Brasil com a maior precisão possível.`;
+    const systemInstruction = `Você é um assistente de transcrição focado em Português do Brasil. O áudio de entrada é uma entrevista em Português do Brasil. Transcreva fielmente.`;
 
     try {
       const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
@@ -1074,7 +1074,7 @@ const App = () => {
             config: {
                 responseModalities: [Modality.AUDIO],
                 inputAudioTranscription: {},
-                systemInstruction: 'Você é um assistente de transcrição. Transcreva o áudio em português do Brasil com a maior precisão possível.',
+                systemInstruction: 'O idioma da fala é Português do Brasil. Transcreva o áudio fielmente em Português do Brasil.',
             },
         });
         await sessionPromiseRef.current;
